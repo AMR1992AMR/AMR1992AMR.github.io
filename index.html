@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بست كواليتي | أقمشة</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #faf9f7;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 15px;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #eee7df, #fff);
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #9a7448;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #111;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    .whatsapp {
+      background: #198754;
+    }
+
+    section {
+      padding: 70px 6%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      text-align: center;
+      padding-bottom: 25px;
+    }
+
+    .fabric-image {
+      height: 220px;
+      background: linear-gradient(135deg, #ddd, #f5f5f5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 18px;
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin: 20px 0 10px;
+    }
+
+    .card p {
+      color: #777;
+      padding: 0 15px;
+      line-height: 1.7;
+    }
+
+    .about {
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 2;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 19px;
+      margin: 15px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 5px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">بست كواليتي</div>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#products">الخامات</a>
+    <a href="#about">عنّا</a>
+    <a href="#contact">تواصل</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h1>أجود أنواع <span>الأقمشة</span></h1>
+
+    <p>
+      خامات مميزة • جودة تستحق الثقة • أفضل الأسعار
+    </p>
+
+    <a href="#products" class="button">
+      شوف الخامات
+    </a>
+
+    <a href="#contact" class="button whatsapp">
+      تواصل معنا
+    </a>
+  </div>
+</section>
+
+<section id="products">
+
+  <h2 class="title">أشهر الخامات</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="fabric-image">صورة روزالين</div>
+      <h3>روزالين</h3>
+      <p>خامة أنيقة ومناسبة للعديد من التصميمات.</p>
+    </div>
+
+    <div class="card">
+      <div class="fabric-image">صورة كتان</div>
+      <h3>كتان</h3>
+      <p>خامة مريحة وخفيفة ومناسبة لفصل الصيف.</p>
+    </div>
+
+    <div class="card">
+      <div class="fabric-image">صورة ستان</div>
+      <h3>ستان حرير</h3>
+      <p>لمسة فاخرة وأناقة مميزة.</p>
+    </div>
+
+    <div class="card">
+      <div class="fabric-image">صورة قطيفة</div>
+      <h3>قطيفة</h3>
+      <p>خامة فخمة ومناسبة للموديلات الشتوية.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+
+  <h2 class="title">عن بست كواليتي</h2>
+
+  <p>
+    نوفر أجود أنواع الأقمشة بأفضل الأسعار،
+    مع خامات مميزة وجودة تستحق الثقة.
+    بيع قطاعي ونصف جملة وجملة،
+    وشحن لجميع المحافظات.
+  </p>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <h2 class="title">تواصل معنا</h2>
+
+  <p>📞 الهاتف: أضف رقم الهاتف هنا</p>
+
+  <p>💬 واتساب: أضف رقم الواتساب هنا</p>
+
+  <p>📍 العنوان: أضف عنوان المحل هنا</p>
+
+  <br>
+
+  <a class="button whatsapp" href="#">
+    تواصل معنا على واتساب
+  </a>
+
+</section>
+
+<footer>
+  © 2026 بست كواليتي - جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
