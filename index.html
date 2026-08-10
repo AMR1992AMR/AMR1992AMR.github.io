@@ -1,163 +1,167 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ملوك الكاجوال | للأقمشة</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Tahoma, sans-serif;
-    }
+<title>ملوك الكاجوال | للأقمشة</title>
 
-    body {
-      background: #f7f7f7;
-      color: #222;
-      line-height: 1.8;
-    }
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-    header {
-      background: #111;
-      color: white;
-      padding: 18px 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+body{
+  font-family:Tahoma,Arial,sans-serif;
+  background:#f5f5f5;
+  color:#222;
+  line-height:1.8;
+}
 
-    header h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
+header{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:22px 15px;
+}
 
-    header p {
-      color: #ddd;
-      font-size: 15px;
-    }
+header h1{
+  font-size:32px;
+  margin-bottom:5px;
+}
 
-    nav {
-      margin-top: 12px;
-    }
+header p{
+  color:#ddd;
+  font-size:16px;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 8px;
-      font-size: 14px;
-    }
+nav{
+  margin-top:15px;
+}
 
-    .hero {
-      background: linear-gradient(135deg, #222, #555);
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 8px;
+  font-size:15px;
+}
 
-    .hero h2 {
-      font-size: 34px;
-      margin-bottom: 15px;
-    }
+.hero{
+  background:linear-gradient(135deg,#111,#444);
+  color:white;
+  text-align:center;
+  padding:75px 20px;
+}
 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
+.hero h2{
+  font-size:38px;
+  margin-bottom:12px;
+}
 
-    .btn {
-      display: inline-block;
-      background: #d4af37;
-      color: #111;
-      padding: 12px 25px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 5px;
-    }
+.hero p{
+  font-size:19px;
+  margin-bottom:25px;
+}
 
-    section {
-      padding: 45px 18px;
-      max-width: 1100px;
-      margin: auto;
-    }
+.button{
+  display:inline-block;
+  background:#d4af37;
+  color:#111;
+  text-decoration:none;
+  padding:12px 24px;
+  border-radius:30px;
+  margin:5px;
+  font-weight:bold;
+}
 
-    .title {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 18px;
+}
 
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
+.title{
+  text-align:center;
+  font-size:29px;
+  margin-bottom:30px;
+}
 
-    .product {
-      background: white;
-      padding: 25px 18px;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 3px 15px rgba(0,0,0,.08);
-    }
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
 
-    .product .icon {
-      font-size: 45px;
-      margin-bottom: 10px;
-    }
+.card{
+  background:white;
+  border-radius:16px;
+  padding:28px 18px;
+  text-align:center;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
 
-    .product h3 {
-      margin-bottom: 8px;
-    }
+.card .icon{
+  font-size:45px;
+  margin-bottom:10px;
+}
 
-    .contact {
-      background: white;
-      border-radius: 18px;
-      padding: 30px 20px;
-      box-shadow: 0 3px 15px rgba(0,0,0,.08);
-      text-align: center;
-    }
+.card h3{
+  font-size:21px;
+  margin-bottom:8px;
+}
 
-    .contact p {
-      margin: 12px 0;
-      font-size: 17px;
-    }
+.contact-box{
+  background:white;
+  border-radius:18px;
+  padding:35px 20px;
+  text-align:center;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
 
-    .phone {
-      color: #111;
-      font-weight: bold;
-      text-decoration: none;
-    }
+.contact-box p{
+  font-size:18px;
+  margin:12px 0;
+}
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 20px;
-    }
+.phone{
+  color:#111;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:20px;
+}
 
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      background: #25D366;
-      color: white;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 27px;
-      box-shadow: 0 4px 12px rgba(0,0,0,.25);
-      z-index: 20;
-    }
-  </style>
+.address{
+  font-size:19px;
+  margin:15px 0 25px;
+}
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  color:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:28px;
+  box-shadow:0 4px 12px rgba(0,0,0,.3);
+  z-index:100;
+}
+</style>
 </head>
 
 <body>
@@ -177,71 +181,77 @@
   <h2>ملوك الكاجوال</h2>
   <p>أجود أنواع الأقمشة بأفضل الأسعار</p>
 
-  <a class="btn" href="#products">شاهد المنتجات</a>
-  <a class="btn" href="#contact">تواصل معنا</a>
+  <a class="button" href="#products">شاهد المنتجات</a>
+  <a class="button" href="#contact">تواصل معنا</a>
 </section>
 
 <section id="products">
+
   <h2 class="title">منتجاتنا وخاماتنا</h2>
 
   <div class="products">
 
-    <div class="product">
+    <div class="card">
       <div class="icon">🧵</div>
-      <h3>كتان</h3>
-      <p>تشكيلة مميزة من خامات الكتان المناسبة لمختلف التصميمات.</p>
+      <h3>الكتان</h3>
+      <p>خامات كتان متنوعة وألوان مميزة.</p>
     </div>
 
-    <div class="product">
+    <div class="card">
       <div class="icon">✨</div>
-      <h3>ستان وحرير</h3>
-      <p>خامات راقية ومميزة للملابس الأنيقة.</p>
+      <h3>الستان والحرير</h3>
+      <p>خامات راقية مناسبة للملابس الأنيقة.</p>
     </div>
 
-    <div class="product">
+    <div class="card">
       <div class="icon">🌸</div>
-      <h3>روزالين</h3>
-      <p>ألوان وخامات متنوعة تناسب أحدث الموضات.</p>
+      <h3>الروزالين</h3>
+      <p>ألوان وتصميمات متنوعة تناسب الموضة.</p>
     </div>
 
-    <div class="product">
+    <div class="card">
       <div class="icon">👗</div>
       <h3>أقمشة حريمي</h3>
-      <p>اختيارات متنوعة من الأقمشة للملابس الحريمي.</p>
+      <p>تشكيلة متنوعة من الأقمشة الحريمي.</p>
     </div>
 
-    <div class="product">
+    <div class="card">
       <div class="icon">🪡</div>
       <h3>خامات متنوعة</h3>
-      <p>تشكيلة كبيرة من الخامات والألوان حسب احتياجاتك.</p>
+      <p>اختيارات متعددة من الخامات والألوان.</p>
     </div>
 
-    <div class="product">
+    <div class="card">
       <div class="icon">🚚</div>
       <h3>شحن للمحافظات</h3>
-      <p>نوفر خدمة الشحن للمحافظات حسب الاتفاق.</p>
+      <p>نوفر الشحن للمحافظات حسب الاتفاق.</p>
     </div>
 
   </div>
+
 </section>
 
 <section id="contact">
+
   <h2 class="title">تواصل معنا</h2>
 
-  <div class="contact">
+  <div class="contact-box">
 
-    <p>📍 <strong>العنوان:</strong></p>
-    <p>شارع الأزهر الشريف – الغورية – ممر رقم 2</p>
-    <p>🏪 محل ملوك الكاجوال</p>
+    <h3>📍 عنوان المحل</h3>
 
-    <p>📞 <strong>الرقم الأول:</strong></p>
+    <p class="address">
+      شارع الأزهر الشريف – الغورية – ممر رقم 2<br>
+      <strong>محل ملوك الكاجوال</strong>
+    </p>
+
+    <h3>📞 أرقام التواصل</h3>
+
     <p>
       <a class="phone" href="tel:01012377450">
         01012377450
       </a>
     </p>
 
-    <p>📞 <strong>الرقم الثاني:</strong></p>
     <p>
       <a class="phone" href="tel:01123264419">
         01123264419
@@ -250,23 +260,27 @@
 
     <br>
 
-    <a class="btn" href="https://wa.me/201012377450">
-      💬 واتساب 01012377450
+    <a class="button" href="https://wa.me/201012377450">
+      💬 واتساب الرقم الأول
     </a>
 
-    <a class="btn" href="https://wa.me/201123264419">
-      💬 واتساب 01123264419
+    <a class="button" href="https://wa.me/201123264419">
+      💬 واتساب الرقم الثاني
     </a>
 
   </div>
+
 </section>
 
 <footer>
-  <p>© 2026 ملوك الكاجوال - جميع الحقوق محفوظة</p>
+
+  <p>ملوك الكاجوال</p>
   <p>للأقمشة والخامات المميزة</p>
+  <p>© 2026 جميع الحقوق محفوظة</p>
+
 </footer>
 
-<a class="whatsapp" href="https://wa.me/201012377450" aria-label="واتساب">
+<a class="whatsapp" href="https://wa.me/201012377450">
   💬
 </a>
 
