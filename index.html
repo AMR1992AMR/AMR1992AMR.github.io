@@ -1,37 +1,274 @@
-<section class="contact" id="contact">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ملوك الكاجوال | للأقمشة</title>
 
-  <h2 class="section-title">
-    <span>تواصل</span> معنا
-  </h2>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Tahoma, sans-serif;
+    }
 
-  <div class="contact-box">
+    body {
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.8;
+    }
 
-    <p>📞 01012377450</p>
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-    <a href="tel:01012377450" class="btn btn-dark">
-      اتصال بالرقم الأول
-    </a>
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
 
-    <br><br>
+    header p {
+      color: #ddd;
+      font-size: 15px;
+    }
 
-    <p>📞 01123264419</p>
+    nav {
+      margin-top: 12px;
+    }
 
-    <a href="tel:01123264419" class="btn btn-dark">
-      اتصال بالرقم الثاني
-    </a>
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
 
-    <br><br>
+    .hero {
+      background: linear-gradient(135deg, #222, #555);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
 
-    <a href="https://wa.me/201012377450" class="btn btn-gold">
+    .hero h2 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d4af37;
+      color: #111;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    section {
+      padding: 45px 18px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .product {
+      background: white;
+      padding: 25px 18px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    }
+
+    .product .icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      background: white;
+      border-radius: 18px;
+      padding: 30px 20px;
+      box-shadow: 0 3px 15px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 12px 0;
+      font-size: 17px;
+    }
+
+    .phone {
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 20px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #25D366;
+      color: white;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 27px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.25);
+      z-index: 20;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>ملوك الكاجوال</h1>
+  <p>للأقمشة والخامات المميزة</p>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#products">المنتجات</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>ملوك الكاجوال</h2>
+  <p>أجود أنواع الأقمشة بأفضل الأسعار</p>
+
+  <a class="btn" href="#products">شاهد المنتجات</a>
+  <a class="btn" href="#contact">تواصل معنا</a>
+</section>
+
+<section id="products">
+  <h2 class="title">منتجاتنا وخاماتنا</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <div class="icon">🧵</div>
+      <h3>كتان</h3>
+      <p>تشكيلة مميزة من خامات الكتان المناسبة لمختلف التصميمات.</p>
+    </div>
+
+    <div class="product">
+      <div class="icon">✨</div>
+      <h3>ستان وحرير</h3>
+      <p>خامات راقية ومميزة للملابس الأنيقة.</p>
+    </div>
+
+    <div class="product">
+      <div class="icon">🌸</div>
+      <h3>روزالين</h3>
+      <p>ألوان وخامات متنوعة تناسب أحدث الموضات.</p>
+    </div>
+
+    <div class="product">
+      <div class="icon">👗</div>
+      <h3>أقمشة حريمي</h3>
+      <p>اختيارات متنوعة من الأقمشة للملابس الحريمي.</p>
+    </div>
+
+    <div class="product">
+      <div class="icon">🪡</div>
+      <h3>خامات متنوعة</h3>
+      <p>تشكيلة كبيرة من الخامات والألوان حسب احتياجاتك.</p>
+    </div>
+
+    <div class="product">
+      <div class="icon">🚚</div>
+      <h3>شحن للمحافظات</h3>
+      <p>نوفر خدمة الشحن للمحافظات حسب الاتفاق.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="title">تواصل معنا</h2>
+
+  <div class="contact">
+
+    <p>📍 <strong>العنوان:</strong></p>
+    <p>شارع الأزهر الشريف – الغورية – ممر رقم 2</p>
+    <p>🏪 محل ملوك الكاجوال</p>
+
+    <p>📞 <strong>الرقم الأول:</strong></p>
+    <p>
+      <a class="phone" href="tel:01012377450">
+        01012377450
+      </a>
+    </p>
+
+    <p>📞 <strong>الرقم الثاني:</strong></p>
+    <p>
+      <a class="phone" href="tel:01123264419">
+        01123264419
+      </a>
+    </p>
+
+    <br>
+
+    <a class="btn" href="https://wa.me/201012377450">
       💬 واتساب 01012377450
     </a>
 
-    <br><br>
-
-    <a href="https://wa.me/201123264419" class="btn btn-gold">
+    <a class="btn" href="https://wa.me/201123264419">
       💬 واتساب 01123264419
     </a>
-<section class="contact" id="contact">
+
   </div>
 </section>
-</section>
+
+<footer>
+  <p>© 2026 ملوك الكاجوال - جميع الحقوق محفوظة</p>
+  <p>للأقمشة والخامات المميزة</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/201012377450" aria-label="واتساب">
+  💬
+</a>
+
+</body>
+</html>
